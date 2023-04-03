@@ -22,7 +22,7 @@ const Navbar = (props) => {
 
             <div className='flex justify-between w-screen lg:flex lg:justify-between lg:h-max   lg:w-screen lg:py-4'>
                 <span className='text-[255%] font-semibold lg:font-semibold text-transparent bg-clip-text  bg-gradient-to-r from-red-600 to-purple-600  lg:text-5xl lg:ml-4 ml-2  mb-2'>
-                    Weather1
+                    Weather
                 </span>
                 <span className='flex mt-[1.5%] lg:px-4 lg:flex lg:m-0'>
                     <input className='w-[150%] h-[85%] lg:h-max px-4 bg-[#2b4162]/30 rounded-l-full  lg:bg-[#2b4162] lg:bg-opacity-30 lg:rounded-l-full lg:py-3 lg:w-96 lg:px-4 lg:text-white lg:focus:outline-none lg:focus:ring lg:focus:ring-[#2b4162] lg:m-0 ml-10 mb-0 ' type="search"

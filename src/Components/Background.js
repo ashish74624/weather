@@ -55,7 +55,7 @@ function Background() {
         >
             <div className='relative bg-cover bg-no-repeat h-screen w-screen overflow-y-scroll lg:overflow-hidden'
             id='Background'
-            style={{ backgroundImage: `url(./Assests/Day/Sunny.jpg)` }}>
+            style={{ backgroundImage: `url(./Assests/${day}/${imgText}.jpg)`  }}>
                 <Navbar scrolled={scrolled} />
                 <div className='md:grid md:grid-cols-2 md:grid-rows-2 lg:grid-cols-none lg:grid-rows-none'>
                 <div className='relative lg:absolute lg:top-20 top-20 col-span-2'>
