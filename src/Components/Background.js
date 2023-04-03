@@ -12,7 +12,7 @@ function Background() {
     const [imgText, setImgText] = useState("")
     const [day, setDay] = useState("Day");
     const bg = async () => {
-        let url = `http://api.weatherapi.com/v1/current.json?key=c7c55c62a62f4983884114352232903&q=${value}&aqi=no`
+        let url = `http://api.weatherapi.com/v1/current.json?key=c7c55c62a62f4983884114352232903&q=Pune&aqi=no`
         let data = await fetch(url);
         let parsedData = await data.json();
         if (Object.keys(parsedData)[0] === "location") {
@@ -55,7 +55,7 @@ function Background() {
         >
             <div className='relative bg-cover bg-no-repeat h-screen w-screen overflow-y-scroll lg:overflow-hidden'
             id='Background'
-            style={{ backgroundImage: `url(./Assests/${day}/${imgText}.jpg)` }}>
+            style={{ backgroundImage: `url(./Assests/Day/Sunny.jpg)` }}>
                 <Navbar scrolled={scrolled} />
                 <div className='md:grid md:grid-cols-2 md:grid-rows-2 lg:grid-cols-none lg:grid-rows-none'>
                 <div className='relative lg:absolute lg:top-20 top-20 col-span-2'>
