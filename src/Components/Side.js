@@ -11,7 +11,7 @@ function Side() {
     const [so2, setSo2] = useState("")
     const [pm2_5, setPm2_5] = useState("");
     const getAQI = async () => {
-        let url = `http://api.weatherapi.com/v1/current.json?key=c7c55c62a62f4983884114352232903&q=${value}&aqi=yes`;
+        let url = `https://cors-anywhere.herokuapp.com/http://api.weatherapi.com/v1/current.json?key=c7c55c62a62f4983884114352232903&q=${value}&aqi=yes`;
         var data = await fetch(url);
         var parsedData = await data.json();
 
