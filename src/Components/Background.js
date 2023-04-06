@@ -12,7 +12,7 @@ function Background() {
     const [imgText, setImgText] = useState("")
     const [day, setDay] = useState("Day");
     const bg = async () => {
-        let url = `https://crossorigin.me/http://api.weatherapi.com/v1/current.json?key=c7c55c62a62f4983884114352232903&q=${value}&aqi=no`
+        let url = `https://api.weatherapi.com/v1/current.json?key=c7c55c62a62f4983884114352232903&q=${value}&aqi=no`
         let data = await fetch(url);
         let parsedData = await data.json();
         if (Object.keys(parsedData)[0] === "location") {

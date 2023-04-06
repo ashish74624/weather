@@ -8,7 +8,7 @@ function Forcast() {
     const { value } = context;
 
     const forC = async () => {
-        let url = `https://crossorigin.me/http://api.weatherapi.com/v1/forecast.json?key=c7c55c62a62f4983884114352232903&q=${value}&days=5&aqi=no&alerts=no`;
+        let url = `https://api.weatherapi.com/v1/forecast.json?key=c7c55c62a62f4983884114352232903&q=${value}&days=5&aqi=no&alerts=no`;
         var data = await fetch(url);
         // if (data?.ok) {
         //     console.log("doneee");
