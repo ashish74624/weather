@@ -48,8 +48,8 @@ function Temp(props) {
         key={city}
         id='temp'
         >
-            <div className=' md:flex-row md:flex flex md:justify-between flex-col-reverse lg:flex lg:flex-row lg:justify-between lg:overflow-x-auto lg:overflow-y-hidden'>
-                <span className='flex flex-row md:flex md:flex-col text-6xl md:text-9xl lg:text-9xl text-[#f5f5f5] font-thin lg:ml-4 ml-2' id="Location">
+            <div className=' md:flex-row md:flex flex md:justify-between flex-col-reverse lg:flex lg:flex-row lg:justify-between overflow-x-scroll  lg:overflow-y-hidden'>
+                <span className='flex flex-row md:flex md:flex-col text-6xl md:text-9xl lg:text-9xl text-[#f5f5f5] font-thin lg:ml-4 ml-2 mr-20' id="Location">
                     {city}
                     {showData && (
                         <span className='text-white text-2xl md:text-3xl font-light mt-1 lg:ml-2 ml-3  md:self-start self-end lg:self-start'>{region} {country}</span>
