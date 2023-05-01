@@ -9,15 +9,8 @@ function Forcast() {
 
     const forC = async () => {
         let url = `https://api.weatherapi.com/v1/forecast.json?key=9523800d18e84b9aa3a81815232804&q=${value}&days=5&aqi=no&alerts=no`;
-        // let url = `https://api.weatherapi.com/v1/forecast.json?key=c7c55c62a62f4983884114352232903&q=${value}&days=5&aqi=no&alerts=no`;
-        var data = await fetch(url);
-        // if (data?.ok) {
-        //     console.log("doneee");
-        // }
-        // else {
-        //     console.log("not done")
-        // }
-        var parsedData = await data.json();
+        let data = await fetch(url);
+        let parsedData = await data.json();
         if (Object.keys(parsedData)[0] === "location") {
             setForecastArticle(parsedData.forecast.forecastday);
         }

@@ -16,8 +16,8 @@ function Temp(props) {
     const getWeather = async () => {
         // console.log(a)
         let url = `https://api.weatherapi.com/v1/current.json?key=c7c55c62a62f4983884114352232903&q=${value}&aqi=no`;
-        var data = await fetch(url);
-        var parsedData = await data.json();
+        let data = await fetch(url);
+        let parsedData = await data.json();
 
         if (Object.keys(parsedData)[0] === "location") {
             setShowData(true)
