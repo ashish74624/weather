@@ -6,7 +6,7 @@ import {  AnimatePresence, motion } from 'framer-motion';
 
 function Temp(props) {
     const context = useContext(TempContext);
-    const { value } = context;
+    const { value,setValue } = context;
     const [city, setCity] = useState("");
     const [region, setRegion] = useState("");
     const [country, setCountry] = useState("");
@@ -14,7 +14,6 @@ function Temp(props) {
     const [condition, setCondition] = useState("");
     const [showData, setShowData] = useState(true)
     const getWeather = async () => {
-        // console.log(a)
         let url = `https://api.weatherapi.com/v1/current.json?key=c7c55c62a62f4983884114352232903&q=${value}&aqi=no`;
         let data = await fetch(url);
         let parsedData = await data.json();
@@ -34,6 +33,11 @@ function Temp(props) {
         else {
         }
 
+    }
+    if (value == "Delhi" || value=="delhi" || value==" delhi" || value=="  delhi" || value=="delhi " || value=="delhi  "
+    || value==" Delhi" || value=="  Delhi" || value=="Delhi " || value=="Delhi  "
+    ) {
+        setValue("Delhi,India")
     }
     useEffect(() => {
         getWeather();
