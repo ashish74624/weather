@@ -71,7 +71,7 @@ function Temp(props) {
             <div>
             {showData && (
                 <div className='overflow-x-scroll text-5xl lg:ml-3  mt-4 font-light h-max w-max p-4  text-blue-300 rounded-2xl'>
-                    <span>
+                    <span className='overflow-x-scroll'>
                         {condition}
                     </span>
                 </div>
