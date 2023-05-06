@@ -12,7 +12,7 @@ function Background() {
     const [imgText, setImgText] = useState("")
     const [day, setDay] = useState("Day");
     const bg = async () => {
-        let url = `https://api.weatherapi.com/v1/current.json?key=c7c55c62a62f4983884114352232903&q=${value}&aqi=no`
+        let url = `https://api.weatherapi.com/v1/current.json?key=9523800d18e84b9aa3a81815232804&q=${value}&aqi=no`
         let data = await fetch(url);
         let parsedData = await data.json();
         if (Object.keys(parsedData)[0] === "location") {
@@ -34,7 +34,7 @@ function Background() {
     const onScroll = () => {
         if (document.getElementById("Background").scrollTop > 10) {
             setScrolled(true);
-            console.log("Scrolled")
+            // console.log("Scrolled")
         }
         else {
             setScrolled(false)
