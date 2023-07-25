@@ -44,7 +44,7 @@ If you would like to contribute to this project, please follow these steps:
 
 If you have any questions or suggestions regarding this project, please feel free to contact the author:
 
-- Name: Your Name
-- Email: your-email@example.com
+- Name: Ashish Kumar
+- Email: ashish74624@gmail.com
 
 Thank you for using this React Weather App!
