@@ -50,12 +50,16 @@ function Background() {
     // console.log(document.getElementById('page').getClientRects());
 
     return (
+        <>
+        <div className='fixed -z-40 h-screen w-screen overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-indigo-200 via-slate-600 to-indigo-200'>
+
+        </div>
+        <img className='fixed -z-20 h-screen w-screen overflow-hidden' src={`https://image-get.vercel.app/${day}/${imgText}.webp`} alt="Background" />
         <div className='w-full h-max lg:flex-none flex-col '
         id='page'
         >
-            <div className='relative bg-cover bg-no-repeat h-screen w-screen overflow-y-scroll lg:overflow-hidden'
-            id='Background'
-            style={{ backgroundImage: `url(./Assests/${day}/${imgText}.jpg)`  }}>
+            <div className='relative bg-cover bg-no-repeat h-screen w-screen overflow-y-scroll '
+            id='Background'>
                 <Navbar scrolled={scrolled} />
                 <div className='md:grid md:grid-cols-2 md:grid-rows-2 lg:grid-cols-none lg:grid-rows-none'>
                 <div className='relative lg:absolute lg:top-20 top-20 col-span-2'>
@@ -70,6 +74,7 @@ function Background() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 
