@@ -36,7 +36,7 @@ function Forcast() {
 
         forC();
 
-    },)
+    },[value])
     return (
         <>
             <div className=' rounded-lg mx-0 mt-3 pb-8 pt-1'>

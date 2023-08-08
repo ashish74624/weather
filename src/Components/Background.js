@@ -44,7 +44,7 @@ function Background() {
         document.getElementById("Background").addEventListener('scroll', onScroll);
         bg();
         return () => window.removeEventListener('scroll', onScroll);
-    },)
+    },[value])
     // let element = document.getElementById('temp')
 
     // console.log(document.getElementById('page').getClientRects());
