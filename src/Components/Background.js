@@ -54,7 +54,7 @@ function Background() {
         <div className='fixed -z-40 h-screen w-screen overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-indigo-200 via-slate-600 to-indigo-200'>
 
         </div>
-        <img className='fixed -z-20 h-screen w-screen overflow-hidden' src={`https://image-get.vercel.app/${day}/${imgText}.webp`} alt="Background" />
+        <img className='fixed -z-20 h-screen w-screen overflow-hidden' src={`https://image-get.vercel.app/ashishkumar74624@gmail.com/${day}/${imgText}.webp`} alt="Background" />
         <div className='w-full h-max lg:flex-none flex-col '
         id='page'
         >
