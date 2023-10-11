@@ -12,4 +12,9 @@
     ::-webkit-scrollbar-thumb{
         background: transparent;
     }
+
+    body{
+        -webkit-tap-highlight-color: transparent;
+      }
+
 }
