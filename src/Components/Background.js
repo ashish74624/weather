@@ -12,7 +12,7 @@ function Background() {
     const [imgText, setImgText] = useState("")
     const [day, setDay] = useState("Day");
     const bg = async () => {
-        let url = `https://api.weatherapi.com/v1/current.json?key=9523800d18e84b9aa3a81815232804&q=${value}&aqi=no`
+        let url = `https://api.weatherapi.com/v1/current.json?key=c7c55c62a62f4983884114352232903&q=${value}&aqi=no`
         let data = await fetch(url);
         let parsedData = await data.json();
         if (Object.keys(parsedData)[0] === "location") {
@@ -54,7 +54,7 @@ function Background() {
         <div className='fixed -z-40 h-screen w-screen overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-indigo-200 via-slate-600 to-indigo-200'>
 
         </div>
-        <img className='fixed -z-20 h-screen w-screen overflow-hidden' src={`https://image-get.onrender.com/ashishkumar74624@gmail.com/${day}/${imgText}.webp`} alt="Background" />
+        <img className='fixed -z-20 h-screen w-screen overflow-hidden' src={`https://image-get.vercel.app/ashishkumar74624@gmail.com/${day}/${imgText}.webp`} alt="Background" />
         <div className='w-full h-max lg:flex-none flex-col '
         id='page'
         >
