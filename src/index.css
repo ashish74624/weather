@@ -5,12 +5,7 @@
 @layer components {
     ::-webkit-scrollbar{
         height: 7px;
-    }
-    ::-webkit-scrollbar-track{
-        background: transparent;
-    }
-    ::-webkit-scrollbar-thumb{
-        background: transparent;
+        display: none;
     }
 
     body{
